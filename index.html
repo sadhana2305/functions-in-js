@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body> 
+  <script>   
+        //task 1
+        console.log("task-1//Greeting Function")
+        name=prompt("enter your name");
+        function greet(a="dear"){
+            console.log("hello " + name +" welcome to our website")
+        }
+        greet()
+        //task 2
+        console.log("task-2//sum Function")
+        a=+prompt("enter a number");
+        b=+prompt("enter another number");
+        function sum(){
+            console.log(a+b)
+        }
+        sum(a,b)
+        //task 3
+        console.log("task-3//square Function")
+        s=+prompt("enter one number to get its square value");
+        function square(){
+            console.log(s*s)
+        }
+        square(s)
+        //task 4
+        console.log("task-4//averages Function")
+        function average(arr) {
+        if (arr.length === 0) 
+        return 0;
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+          sum += arr[i];
+        }
+        return sum / arr.length;
+        }
+       console.log(average([2, 5, 2])); 
+       console.log(average([10, 20, 30, 40])); 
+       console.log(average([1, 2, 3, 4, 5])); 
+       console.log(average([])); 
+
+       //task 5
+       console.log("task-5//vowels Function")
+       function containsVowels(str) {
+       const vowels = "aeiouAEIOU";
+       for (let i = 0; i < str.length; i++) {
+       for (let j = 0; j < vowels.length; j++) {
+       if (str[i] === vowels[j]) {
+        return true; 
+      }
+    }
+  }
+  return false;  
+}
+console.log(containsVowels("hello")); 
+console.log(containsVowels("sadhana"));  
+console.log(containsVowels("TV")); 
+console.log(containsVowels("fly")); 
+
+       //task 6
+       console.log("task-6//temp conversion Function")
+       function Temperature(temp, scale) {
+                if (scale === "C") {
+                return (temp - 32) * (5 / 9);
+                }  
+                else if (scale === "F") {
+                return (temp * (9 / 5)) + 32;
+                }
+                else {
+                return error;
+                }
+        }
+console.log(Temperature(32, "C")); 
+console.log(Temperature(0, "F")); 
+console.log(Temperature(100, "C")); 
+console.log(Temperature(37.78, "F")); 
+console.log(Temperature(212, "C")); 
+console.log(Temperature(100, "F")); 
+
+</script>
+    
+</body>
+</html>
